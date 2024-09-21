@@ -1,8 +1,9 @@
+#/home/abd/pam/pam/bin/python
 import face_recognition
 import cv2
 import numpy
 import pam
-face=face_recognition.load_image_file("abd.jpg")
+face=face_recognition.load_image_file("/home/abd/pam/abd.jpg")
 known_face_encoding=face_recognition.face_encodings(face)[0]
 cap=cv2.VideoCapture(0)
 p=pam.pam()
